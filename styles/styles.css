@@ -1,0 +1,90 @@
+:root{
+    --color-primary:#D43F52;
+    --color-secondary:#222;
+    --color-body:#fff;
+}
+
+/* typography*/
+
+html{
+    font-size: 62.5%; /*1rem = 10px (default) */
+}
+body{
+    font-size: 1.6rem;
+    color: var(--color-body);
+    padding: 0;
+}
+p{
+    color: #999;
+}
+h1{
+    font-size: 3.6rem;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+/* btn */
+
+.btn{
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    /* background-color: transparent; */
+    outline: 0;
+}
+
+.btn--primary{
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+
+}
+.btn--red{
+    background-color: var(--color-primary);
+    color: var(--color-body);
+}
+
+/* header*/
+
+.header{
+    background-image: url(../images/home-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding-top: 15rem;
+   display: grid;
+   place-items: center;
+   /* flex-direction: column;
+   justify-content: center; */
+}
+
+.header h1{
+
+    border:3px solid #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    display: inline-block;
+}
+
+.blinking {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+.header header{
+  max-width: 70vw;
+}
+
+.header p{
+    margin: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+
+}
