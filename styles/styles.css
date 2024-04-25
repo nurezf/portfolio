@@ -176,3 +176,68 @@ input[type="range"]:disabled{
     background-color: var(--color-primary);
 }
 
+
+/* section portfolio*/
+
+.portfolio{
+    background-color: #222;
+    text-align: center;
+    padding: 3rem;
+}
+
+.portfolio-flex{
+    display: flex;
+    background-color: #222;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.portfolio-flex .img{
+    margin: 5rem 3rem;
+    width:30rem;
+    height: 30rem;
+}
+
+.portfolio-flex .img:nth-child(1){
+    background-image: url(../images/portfolio-img1.jpg);
+    background-size: cover;
+}
+.portfolio-flex .img:nth-child(2){
+    background-image: url(../images/portfolio-img2.jpg);
+    background-size: cover;
+}
+.portfolio-flex .img:nth-child(3){
+    background-image: url(../images/portfolio-img3.jpg);
+    background-size: cover;
+}
+
+.img-in{
+    display: none;
+}
+
+.visible{
+    display: block;
+    opacity: 0.5;
+}
+
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    place-items: center;
+}
+.img-grid{
+    height: 50rem;
+    width: 50rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.portfolio-grid .img-grid:nth-child(1){
+   background-image: url(../images/portfolio-img4.jpg);
+
+}
+.portfolio-grid .img-grid:nth-child(2){
+    background-image: url(../images/portfolio-img5.jpg);
+
+ }
+
