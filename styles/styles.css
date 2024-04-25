@@ -241,3 +241,61 @@ input[type="range"]:disabled{
 
  }
 
+ 
+ /*footer*/
+ .footer{
+    background-color: #1a1a1a;
+ }
+ footer {
+    background-color: #1a1a1a;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ }
+   footer .icon-container svg{
+   height: 3rem;
+   width: 4rem;
+}
+footer .icon-container{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 3rem;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem;
+}
+.footer-txt{
+    font-size: 2rem;
+    margin-top: -10rem;
+    color: #999;
+    display: inline;
+    position: relative;
+    top: -1rem;
+}
+
+footer form{
+  margin-top: 8rem;
+  width: 40vw;
+}
+footer form input,textarea{
+    background-color: transparent !important ;
+    border: 3px solid #999  !important;
+    color: var(--color-body) !important;
+    font-size: 1.6rem !important;
+}
+
+footer form input::placeholder{
+    color: #999 !important;
+}
+
+.copyright{
+   margin-top: 5rem;
+   text-align: center;
+}
+textarea::placeholder{
+    color: #999 !important;
+}
+
