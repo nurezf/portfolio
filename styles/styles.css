@@ -88,3 +88,50 @@ h3{
 @media screen and (min-width: 768px) {
 
 }
+
+
+/* what i do*/
+
+.what-i-do{
+    padding: 5rem;
+    background-color: #222;
+    padding: 2rem 0;
+    text-align: center;
+}
+.what-i-do .flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+}
+.icon-container{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid#fff;
+}
+
+.icon-container svg{
+    width: 5rem;
+    height: 5rem;
+    fill: var(--color-primary);
+    color: #fff;
+    border-radius: 50%;
+}
+.work{
+    margin: 2rem;
+}
+
+.icon-container:hover{
+    background-color: var(--color-body);
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .what-i-do .flex{
+    display: flex;
+    flex-direction:column;
+    }
+}
