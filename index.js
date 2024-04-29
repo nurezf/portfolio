@@ -15,4 +15,4 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
-app.listen(3002,()=>console.log("listening on port 3002"));
+app.listen(process.env.PORT || 3002,()=>console.log("listening on port 3002"));
