@@ -20,6 +20,16 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "IXKqnfHdIFDkTPfzT",
+      });
+   })();
+</script>
   </head>
   <body>
     <section class="header text-center">
@@ -207,13 +217,16 @@
           </div>
         </div>
         </div>
-        <form action="">
-          <input type="text" name="name" class="form-control" placeholder="Name"/><br/>
-          <input type="email" name="email" class="form-control" placeholder="Email"/><br/>
-          <textarea rows="4" name="message" cols="50" name="message" class="form-control" placeholder="Message"></textarea><br/>
-          <div class="d-grid gap-2 col-6 mx-auto"></div>
-          <button class="btn btn-danger" type="button">send me</button>
-        </div>
+      
+          <div class="form">
+            <input id="name" type="text" name="name" class="form-control" placeholder="Name"/><br/>
+            <input id="email" type="email" name="email" class="form-control" placeholder="Email"/><br/>
+            <textarea id="message" rows="4" name="message" cols="50" name="message" class="form-control" placeholder="Message"></textarea><br/>
+            <div class="d-grid gap-2 col-6 mx-auto"></div>
+            <button id="btn" onclick="sendMail()" class="btn btn-danger" type="submit" name="sebmit">send me</button>
+          </div>
+       
+        <form  action="/" method="POST">
         </form>
       </footer>
       <div class="copyright">
@@ -224,7 +237,7 @@
     <script>
       AOS.init();
     </script>
-    <script src="scripts/index.js"></script>
+<script src="scripts/index.js"></script>
 
   </body>
 </html>
